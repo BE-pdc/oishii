@@ -28,16 +28,16 @@ const Header = () => {
       <NavLink id="link-home" to="/">
         home
       </NavLink>
-      <NavLink id="link-menu" to="/">
+      <NavLink id="link-menu" to="/menu">
         menu
       </NavLink>
-      <NavLink id="link-recensies" to="/">
+      <NavLink id="link-recensies" to="/recensies">
         recensies
       </NavLink>
-      <NavLink id="link-contact" to="/">
+      <NavLink id="link-contact" to="/contact">
         contact
       </NavLink>
-      <NavLink id="link-download" to="/">
+      <NavLink id="link-download" to="/downloadapp">
         download onze app
       </NavLink>
     </Nav>
