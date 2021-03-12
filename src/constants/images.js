@@ -1,7 +1,7 @@
-const oishii_logo = require("./../assets/images/oishii_logo.png")
-const oishii_logo_x2 = require("./../assets/images/oishii_logo_x2.png")
+const OISHII_LOGO = require("./../assets/images/oishii_logo.png")
+const OISHII_LOGO_x2 = require("./../assets/images/oishii_logo_x2.png")
+const HERO_SUSHI = require("./../assets/images/hero-sushi.jpeg")
 
-export default {
-  oishii_logo,
-  oishii_logo_x2,
-}
+const IMAGES = { OISHII_LOGO, OISHII_LOGO_x2, HERO_SUSHI }
+
+export default IMAGES

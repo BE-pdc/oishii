@@ -5,47 +5,11 @@ import styled from "styled-components"
 import { images } from "../constants"
 
 const Header = () => {
-  const HeaderWrapper = styled.div`
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.9);
-  `
-
-  const Header = styled.header`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1500px;
-    margin: 0 auto;
-  `
-
-  const Nav = styled.nav`
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  `
-
-  const NavLink = styled(Link)`
-    color: white;
-    text-decoration: none;
-    font-size: 1.6em;
-    font-family: "Lato";
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 12px 0;
-    margin: 0 50px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0);
-  `
-
-  const Logo = styled.img`
-    margin-left: 20px;
-  `
-
   return (
     <HeaderWrapper>
-      <Header>
+      <HeaderContainer>
         <Logo
-          src={images.oishii_logo.default}
+          src={images.OISHII_LOGO.default}
           alt="Oishii Logo"
           srcset=""
           height="60"
@@ -67,9 +31,51 @@ const Header = () => {
             download onze app
           </NavLink>
         </Nav>
-      </Header>
+      </HeaderContainer>
     </HeaderWrapper>
   )
 }
+
+const HeaderWrapper = styled.div`
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 80px;
+  width: 100%;
+`
+
+const HeaderContainer = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1500px;
+  margin: 0 auto;
+  height: inherit;
+  /* background-color: red; */
+`
+
+const Nav = styled.nav`
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const NavLink = styled(Link)`
+  color: white;
+  text-decoration: none;
+  font-size: 1.6em;
+  font-family: "Lato";
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 0;
+  margin: 0 50px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+`
+
+const Logo = styled.img`
+  margin-left: 20px;
+`
 
 export default Header
