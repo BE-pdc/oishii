@@ -5,6 +5,13 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-plugin-anchor-links`,
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -80,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {

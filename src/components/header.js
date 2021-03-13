@@ -40,9 +40,10 @@ const HeaderWrapper = styled.div`
   position: fixed;
   display: flex;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 1);
   height: 80px;
   width: 100%;
+  z-index: 100;
 `
 
 const HeaderContainer = styled.header`
