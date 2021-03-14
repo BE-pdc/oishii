@@ -1,5 +1,5 @@
-const OISHII_LOGO = require("./../assets/images/oishii_logo.png")
-const OISHII_LOGO_x2 = require("./../assets/images/oishii_logo_x2.png")
+const OISHII_LOGO = require("./../assets/images/Oishii_logo.png")
+const OISHII_LOGO_x2 = require("./../assets/images/Oishii_logo_x2.png")
 const HERO_SUSHI = require("./../assets/images/hero-sushi.jpeg")
 
 const JAPANESE_RESTAURANT = require("./../assets/images/japanese_restaurant.jpg")
