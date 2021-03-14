@@ -1,40 +1,46 @@
 import React from "react"
+import MenuItem from "../components/MenuItem"
+
 import styled from "styled-components"
 
-import { AnchorLink } from "gatsby-plugin-anchor-links"
-
 const MenuOption = props => {
-  const OishiiMenuOption = styled(AnchorLink)`
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    height: 600px;
-    width: 275px;
-    background: url(${props.image}),
-      linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: overlay;
-    color: #fff;
-    border-radius: 2px;
-    transition: transform ease-in-out 0.5s;
-
-    & > p {
-      margin-top: 60px;
-      font-size: 2.5em;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-
-    &:hover {
-      transform: scale(1.1);
-    }
-  `
   return (
-    <OishiiMenuOption to="/menu#sect-dranken" title="Section Dranken">
-      <p>{props.name}</p>
-    </OishiiMenuOption>
+    <StyledMenuOption id={props.id}>
+      <h2>{props.title.toUpperCase()}</h2>
+
+      <MenuItems>
+        {props.menuItems.map(item => (
+          <MenuItem
+            item={item.name}
+            desc={item.description}
+            image={item.image}
+            price={item.price}
+          />
+        ))}
+      </MenuItems>
+    </StyledMenuOption>
   )
 }
+
+const StyledMenuOption = styled.section`
+  width: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  & h2 {
+    font-size: 4em;
+    margin: 50px 0 0 0;
+  }
+`
+
+const MenuItems = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 1500px;
+  flex-wrap: wrap;
+  padding: 20px 100px;
+`
 
 export default MenuOption

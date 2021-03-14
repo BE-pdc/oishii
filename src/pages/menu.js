@@ -1,12 +1,151 @@
 import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
-import MenuItem from "../components/MenuItem"
 import MenuOption from "../components/MenuOption"
+
+import MenuOptionCard from "../components/MenuOptionCard"
 
 import { images } from "./../constants"
 
 const Menu = () => {
+  const theMenu = [
+    {
+      id: "dranken",
+      image: images.BEVERAGES.default,
+      items: [
+        {
+          name: "Matcha",
+          description: "Groene thee gemaakt van poederthee",
+          image: images.MATCHA.default,
+          price: 2.9,
+        },
+        {
+          name: "Genmaicha",
+          description: "Groene theebladen met geroosterd bruine thee",
+          image: images.GENMAICHA.default,
+          price: 2.9,
+        },
+        {
+          name: "Ryokucha",
+          description: "Gestoomde groene thee",
+          image: images.RYOKUCHA.default,
+          price: 3.5,
+        },
+        {
+          name: "Sakura Tea",
+          description: "Gemaakt van eetbare kersenbloesems",
+          image: images.SAKURA_TEA.default,
+          price: 3.95,
+        },
+        {
+          name: "Kombucha",
+          description: "Zeewier kelp thee",
+          image: images.KOMBUCHA.default,
+          price: 3.95,
+        },
+        {
+          name: "Sake",
+          description: "Japanse rijstwijn",
+          image: images.SAKE.default,
+          price: 3.95,
+        },
+        {
+          name: "Amazake",
+          description:
+            "Traditionele alcoholische drank gemaakt van gefermenteerde rijst",
+          image: images.AMAZAKE.default,
+          price: 4.3,
+        },
+      ],
+    },
+    {
+      id: "voorgerechten",
+      image: images.APPETIZERS.default,
+      items: [
+        {
+          name: "Harumaki",
+          description: "Japanse loempia's",
+          image: images.MATCHA.default,
+          price: 5.0,
+        },
+        {
+          name: "Gyoza",
+          description: "Japanse knoedels",
+          image: images.GENMAICHA.default,
+          price: 5.1,
+        },
+        {
+          name: "Spicy Edamame",
+          description:
+            "Vurige en pittige bonen, gebakken met chilipasta, knoflook en miso",
+          image: images.RYOKUCHA.default,
+          price: 5.4,
+        },
+        {
+          name: "Agedashi Tofu",
+          description:
+            "Knapperige gefrituurde tofu, gereserveerd in smaakvolle tsuyu-saus met geraspte radijs, groene ui en bonitovlokken als toppings",
+          image: images.SAKURA_TEA.default,
+          price: 5.9,
+        },
+        {
+          name: "Shumai",
+          description:
+            "Gemalen varkensvlees en gehakt, bruine ui met een groene erwt bovenop elk",
+          image: images.KOMBUCHA.default,
+          price: 6.3,
+        },
+        {
+          name: "Teba Shio",
+          description: "Gezouten kippenvleugeltjes",
+          image: images.SAKE.default,
+          price: 6.5,
+        },
+        {
+          name: "Karaage",
+          description: "Japanse gebakken kip",
+          image: images.AMAZAKE.default,
+          price: 6.5,
+        },
+      ],
+    },
+    {
+      id: "sushi",
+      image: images.SUSHI.default,
+      items: [
+        {
+          name: "Harumaki",
+          description: "Japanse loempia's",
+          image: images.MATCHA.default,
+          price: 5.0,
+        },
+      ],
+    },
+    {
+      id: "noedelsoeps",
+      image: images.NOODLESOUPS.default,
+      items: [
+        {
+          name: "Harumaki",
+          description: "Japanse loempia's",
+          image: images.MATCHA.default,
+          price: 5.0,
+        },
+      ],
+    },
+    {
+      id: "desserts",
+      image: images.DESSERTS.default,
+      items: [
+        {
+          name: "Harumaki",
+          description: "Japanse loempia's",
+          image: images.MATCHA.default,
+          price: 5.0,
+        },
+      ],
+    },
+  ]
   return (
     <Layout>
       <BackgroundImage>
@@ -14,70 +153,19 @@ const Menu = () => {
           <div className="oishii-menu-options-wrapper">
             <h1>menu</h1>
             <div className="oishii-menu-options">
-              <MenuOption name="dranken" image={images.BEVERAGES.default} />
-              <MenuOption
-                name="voorgerechten"
-                image={images.APPETIZERS.default}
-              />
-              <MenuOption name="sushi" image={images.SUSHI.default} />
-              <MenuOption
-                name="noedelsoeps"
-                image={images.NOODLESOUPS.default}
-              />
-              <MenuOption name="desserts" image={images.DESSERTS.default} />
+              {theMenu.map(card => (
+                <MenuOptionCard name={card.id} image={card.image} />
+              ))}
             </div>
           </div>
-          <DrankenSection id="sect-dranken">
-            <h2>DRANKEN</h2>
-            <MenuItems>
-              <MenuItem
-                item="Matcha"
-                desc="Groene thee gemaakt van poederthee"
-                image={images.MATCHA.default}
-                price="2.90"
-              />
-              <MenuItem
-                item="Genmaicha"
-                desc="Groene theebladen met geroosterd bruine thee"
-                image={images.GENMAICHA.default}
-                price="2.90"
-              />
-              <MenuItem
-                item="Ryokucha"
-                desc="Gestoomde groene thee"
-                image={images.RYOKUCHA.default}
-                price="3.50"
-              />
-              <MenuItem
-                item="Sakura Tea"
-                desc="Gemaakt van eetbare kersenbloesems"
-                image={images.SAKURA_TEA.default}
-                price="3.95"
-              />
-              <MenuItem
-                item="Kombucha"
-                desc="Zeewier kelp thee"
-                image={images.KOMBUCHA.default}
-                price="3.95"
-              />
-              <MenuItem
-                item="Sake"
-                desc="Japanse rijstwijn"
-                image={images.SAKE.default}
-                price="3.95"
-              />
-              <MenuItem
-                item="Amazake"
-                desc="Traditionele alcoholische drank gemaakt van gefermenteerde rijst"
-                image={images.AMAZAKE.default}
-                price="4.30"
-              />
-            </MenuItems>
-          </DrankenSection>
-          <VoorgerechtenSection></VoorgerechtenSection>
-          <SushiSection></SushiSection>
-          <NoedelsoepsSection></NoedelsoepsSection>
-          <DessertsSection></DessertsSection>
+
+          {theMenu.map(option => (
+            <MenuOption
+              id={option.id}
+              title={option.id}
+              menuItems={option.items}
+            />
+          ))}
         </MenuContainer>
       </BackgroundImage>
     </Layout>
@@ -122,14 +210,6 @@ const MenuContainer = styled.div`
   }
 `
 
-const MenuItems = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 1500px;
-  flex-wrap: wrap;
-  padding: 20px 100px;
-`
-
 const DrankenSection = styled.section`
   width: 1500px;
   display: flex;
@@ -142,9 +222,5 @@ const DrankenSection = styled.section`
     margin: 50px 0 0 0;
   }
 `
-const VoorgerechtenSection = styled.section``
-const SushiSection = styled.section``
-const NoedelsoepsSection = styled.section``
-const DessertsSection = styled.section``
 
 export default Menu
