@@ -65,46 +65,46 @@ const Menu = () => {
         {
           name: "Harumaki",
           description: "Japanse loempia's",
-          image: images.MATCHA.default,
+          image: images.HARUMAKI.default,
           price: 5.0,
         },
         {
           name: "Gyoza",
           description: "Japanse knoedels",
-          image: images.GENMAICHA.default,
+          image: images.GYOZA.default,
           price: 5.1,
         },
         {
           name: "Spicy Edamame",
           description:
             "Vurige en pittige bonen, gebakken met chilipasta, knoflook en miso",
-          image: images.RYOKUCHA.default,
+          image: images.SPICY_EDAMAME.default,
           price: 5.4,
         },
         {
           name: "Agedashi Tofu",
           description:
             "Knapperige gefrituurde tofu, gereserveerd in smaakvolle tsuyu-saus met geraspte radijs, groene ui en bonitovlokken als toppings",
-          image: images.SAKURA_TEA.default,
+          image: images.AGEDASHI_TOFU.default,
           price: 5.9,
         },
         {
           name: "Shumai",
           description:
             "Gemalen varkensvlees en gehakt, bruine ui met een groene erwt bovenop elk",
-          image: images.KOMBUCHA.default,
+          image: images.SHUMAI.default,
           price: 6.3,
         },
         {
           name: "Teba Shio",
           description: "Gezouten kippenvleugeltjes",
-          image: images.SAKE.default,
+          image: images.TEBA_SHIO.default,
           price: 6.5,
         },
         {
           name: "Karaage",
           description: "Japanse gebakken kip",
-          image: images.AMAZAKE.default,
+          image: images.KARAAGE.default,
           price: 6.5,
         },
       ],
@@ -114,10 +114,39 @@ const Menu = () => {
       image: images.SUSHI.default,
       items: [
         {
-          name: "Harumaki",
-          description: "Japanse loempia's",
-          image: images.MATCHA.default,
-          price: 5.0,
+          name: "Tonijn",
+          image: images.SUSHI_TUNA.default,
+          price: 8.5,
+        },
+        {
+          name: "Zalm",
+          image: images.SUSHI_SALMON.default,
+          price: 8.5,
+        },
+        {
+          name: "Inktvis",
+          image: images.SUSHI_SQUID.default,
+          price: 8.5,
+        },
+        {
+          name: "Zoetwater Paling",
+          image: images.SUSHI_FRESHWATER_EEL.default,
+          price: 8.5,
+        },
+        {
+          name: "Garnaal",
+          image: images.SUSHI_SHRIMP.default,
+          price: 8.7,
+        },
+        {
+          name: "Ei",
+          image: images.SUSHI_EGG.default,
+          price: 8.7,
+        },
+        {
+          name: "Zeepaling",
+          image: images.SUSHI_SEA_EEL.default,
+          price: 9.0,
         },
       ],
     },
@@ -190,9 +219,10 @@ const MenuContainer = styled.div`
   align-items: center;
 
   & h1 {
-    font-size: 3em;
+    font-size: 5em;
     text-transform: uppercase;
     color: #fff;
+    margin-bottom: 1.2em;
   }
 
   & .oishii-menu-options-wrapper {
@@ -200,7 +230,7 @@ const MenuContainer = styled.div`
     height: calc(100vh - 80px);
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
   & .oishii-menu-options {
