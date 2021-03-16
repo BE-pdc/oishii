@@ -1,43 +1,43 @@
-const OISHII_LOGO = require("./../assets/images/Oishii_logo.png")
-const OISHII_LOGO_x2 = require("./../assets/images/Oishii_logo_x2.png")
-const HERO_SUSHI = require("./../assets/images/hero-sushi.jpeg")
+import OISHII_LOGO from "./../images/Oishii_logo.png"
+import OISHII_LOGO_x2 from "./../images/Oishii_logo_x2.png"
+import HERO_OISHII from "./../images/hero-sushi.jpeg"
 
-const JAPANESE_RESTAURANT = require("./../assets/images/japanese_restaurant.jpg")
+import JAPANESE_RESTAURANT from "./../images/japanese_restaurant.jpg"
 
-const APPETIZERS = require("./../assets/images/appetizers.png")
-const BEVERAGES = require("./../assets/images/beverages.png")
-const DESSERTS = require("./../assets/images/desserts.png")
-const NOODLESOUPS = require("./../assets/images/noodlesoups.png")
-const SUSHI = require("./../assets/images/sushi.png")
+import APPETIZERS from "./../images/appetizers.png"
+import BEVERAGES from "./../images/beverages.png"
+import DESSERTS from "./../images/desserts.png"
+import NOODLESOUPS from "./../images/noodlesoups.png"
+import SUSHI from "./../images/sushi.png"
 
-const AMAZAKE = require("./../assets/images/dranken/amazake.jpg")
-const GENMAICHA = require("./../assets/images/dranken/genmaicha.jpg")
-const KOMBUCHA = require("./../assets/images/dranken/kombucha.jpg")
-const MATCHA = require("./../assets/images/dranken/matcha.jpg")
-const RYOKUCHA = require("./../assets/images/dranken/ryokucha.jpg")
-const SAKE = require("./../assets/images/dranken/sake.jpg")
-const SAKURA_TEA = require("./../assets/images/dranken/sakura_tea.jpg")
+import AMAZAKE from "./../images/dranken/amazake.jpg"
+import GENMAICHA from "./../images/dranken/genmaicha.jpg"
+import KOMBUCHA from "./../images/dranken/kombucha.jpg"
+import MATCHA from "./../images/dranken/matcha.jpg"
+import RYOKUCHA from "./../images/dranken/ryokucha.jpg"
+import SAKE from "./../images/dranken/sake.jpg"
+import SAKURA_TEA from "./../images/dranken/sakura_tea.jpg"
 
-const HARUMAKI = require("./../assets/images/appetizers/harumaki.jpg")
-const GYOZA = require("./../assets/images/appetizers/gyoza.jpg")
-const SPICY_EDAMAME = require("./../assets/images/appetizers/spicy_edamame.jpg")
-const AGEDASHI_TOFU = require("./../assets/images/appetizers/agedashi_tofu.jpg")
-const SHUMAI = require("./../assets/images/appetizers/shumai.jpg")
-const TEBA_SHIO = require("./../assets/images/appetizers/teba_shio.jpg")
-const KARAAGE = require("./../assets/images/appetizers/karaage.jpg")
+import HARUMAKI from "./../images/appetizers/harumaki.jpg"
+import GYOZA from "./../images/appetizers/gyoza.jpg"
+import SPICY_EDAMAME from "./../images/appetizers/spicy_edamame.jpg"
+import AGEDASHI_TOFU from "./../images/appetizers/agedashi_tofu.jpg"
+import SHUMAI from "./../images/appetizers/shumai.jpg"
+import TEBA_SHIO from "./../images/appetizers/teba_shio.jpg"
+import KARAAGE from "./../images/appetizers/karaage.jpg"
 
-const SUSHI_EGG = require("./../assets/images/sushi/sushi_ei.jpg")
-const SUSHI_SHRIMP = require("./../assets/images/sushi/sushi_garnaal.jpg")
-const SUSHI_SQUID = require("./../assets/images/sushi/sushi_inktvis.jpg")
-const SUSHI_TUNA = require("./../assets/images/sushi/sushi_tonijn.jpg")
-const SUSHI_SALMON = require("./../assets/images/sushi/sushi_zalm.jpg")
-const SUSHI_SEA_EEL = require("./../assets/images/sushi/sushi_zeepaling.jpg")
-const SUSHI_FRESHWATER_EEL = require("./../assets/images/sushi/sushi_zoetwater_paling.jpg")
+import SUSHI_EGG from "./../images/sushi/sushi_ei.jpg"
+import SUSHI_SHRIMP from "./../images/sushi/sushi_garnaal.jpg"
+import SUSHI_SQUID from "./../images/sushi/sushi_inktvis.jpg"
+import SUSHI_TUNA from "./../images/sushi/sushi_tonijn.jpg"
+import SUSHI_SALMON from "./../images/sushi/sushi_zalm.jpg"
+import SUSHI_SEA_EEL from "./../images/sushi/sushi_zeepaling.jpg"
+import SUSHI_FRESHWATER_EEL from "./../images/sushi/sushi_zoetwater_paling.jpg"
 
 const IMAGES = {
   OISHII_LOGO,
   OISHII_LOGO_x2,
-  HERO_SUSHI,
+  HERO_OISHII,
   JAPANESE_RESTAURANT,
   APPETIZERS,
   BEVERAGES,

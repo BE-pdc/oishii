@@ -9,7 +9,7 @@ const Header = () => {
     <HeaderWrapper>
       <HeaderContainer>
         <Logo
-          src={images.OISHII_LOGO.default}
+          src={images.OISHII_LOGO}
           alt="Oishii Logo"
           srcset=""
           height="60"

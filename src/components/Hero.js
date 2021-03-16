@@ -26,7 +26,7 @@ const SectionHero = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url(${images.HERO_SUSHI.default}), rgba(0, 0, 0, 0.5);
+  background: url(${images.HERO_OISHII}), rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
