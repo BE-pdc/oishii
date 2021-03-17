@@ -1,5 +1,5 @@
 import React from "react"
-import MenuItem from "../components/MenuItem"
+import MenuItem from "./MenuItem"
 
 import styled from "styled-components"
 
