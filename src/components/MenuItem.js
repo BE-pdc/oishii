@@ -27,6 +27,7 @@ const StyledMenuItem = styled.div`
   width: 500px;
   margin: 35px;
   padding: 40px;
+  border-radius: 10px;
   & div {
     display: flex;
     flex-direction: column;

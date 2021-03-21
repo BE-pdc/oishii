@@ -34,6 +34,19 @@ import SUSHI_SALMON from "./../images/sushi/sushi_zalm.jpg"
 import SUSHI_SEA_EEL from "./../images/sushi/sushi_zeepaling.jpg"
 import SUSHI_FRESHWATER_EEL from "./../images/sushi/sushi_zoetwater_paling.jpg"
 
+import CHAMPON from "./../images/noodlesoups/butajiru.jpg"
+import HOTO from "./../images/noodlesoups/hoto.jpg"
+import OKINAWA_SOBA from "./../images/noodlesoups/okinawa_soba.jpg"
+import UDON_NOODLES from "./../images/noodlesoups/udon_noodles.jpg"
+import BUTAJIRU from "./../images/noodlesoups/butajiru.jpg"
+
+import DAIFUKU from "./../images/desserts/daifuku.jpg"
+import DORAYAKI from "./../images/desserts/dorayaki.jpg"
+import DANGO from "./../images/desserts/dango.jpg"
+import ANMITSU from "./../images/desserts/anmitsu.jpg"
+import ANKO from "./../images/desserts/anko.jpg"
+import OHAGI from "./../images/desserts/ohagi.jpg"
+
 const IMAGES = {
   OISHII_LOGO,
   OISHII_LOGO_x2,
@@ -65,6 +78,17 @@ const IMAGES = {
   SUSHI_SALMON,
   SUSHI_SEA_EEL,
   SUSHI_FRESHWATER_EEL,
+  CHAMPON,
+  HOTO,
+  OKINAWA_SOBA,
+  UDON_NOODLES,
+  BUTAJIRU,
+  DAIFUKU,
+  DORAYAKI,
+  DANGO,
+  ANMITSU,
+  ANKO,
+  OHAGI,
 }
 
 export default IMAGES

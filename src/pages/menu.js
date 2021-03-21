@@ -155,10 +155,37 @@ const Menu = () => {
       bgImg: images.NOODLESOUPS,
       items: [
         {
-          name: "Harumaki",
-          description: "Japanse loempia's",
-          image: images.MATCHA,
-          price: 5.0,
+          name: "Champon",
+          description:
+            "Noedelsoepgerecht bestaande uit varkensvlees, zeevruchten en groenten geserveerd bovenop de noedels",
+          image: images.CHAMPON,
+          price: 10.9,
+        },
+        {
+          name: "Hoto",
+          description:
+            "Gevuld met zetmeelrijke groenten, vlees en platte noedels in dashi bouillon op basis van miso",
+          image: images.HOTO,
+          price: 11.9,
+        },
+        {
+          name: "Okinawa Soba",
+          description:
+            "Taaie noedels, gedrenkt in heerlijk varkensvlees en dashi bouillon",
+          image: images.OKINAWA_SOBA,
+          price: 12.9,
+        },
+        {
+          name: "Udon Noedels",
+          description: "Japanse tarwebloemnoedels",
+          image: images.UDON_NOODLES,
+          price: 12.9,
+        },
+        {
+          name: "Butajiru",
+          description: "Varkensvleessoep",
+          image: images.BUTAJIRU,
+          price: 13.5,
         },
       ],
     },
@@ -167,10 +194,41 @@ const Menu = () => {
       bgImg: images.DESSERTS,
       items: [
         {
-          name: "Harumaki",
-          description: "Japanse loempia's",
-          image: images.MATCHA,
-          price: 5.0,
+          name: "Daifuku",
+          description: "Kleine ronde mochi gevuld met zoete rode bonenpasta",
+          image: images.DAIFUKU,
+          price: 6.1,
+        },
+        {
+          name: "Dorayaki",
+          description: "Mini pannenkoeken gevuld met bonenpasta",
+          image: images.DORAYAKI,
+          price: 6.1,
+        },
+        {
+          name: "Dango",
+          description: "Gekookte deegbal gemaakt van rijstbloem",
+          image: images.DANGO,
+          price: 6.3,
+        },
+        {
+          name: "Anmitsu",
+          description:
+            "Gelei gegarneerd met fruit, dango, azuki bonenpasta, ijs en donkerbruin gekleurde siroop",
+          image: images.ANMITSU,
+          price: 7.0,
+        },
+        {
+          name: "Anko",
+          description: "Zoete bonenpasta",
+          image: images.ANKO,
+          price: 7.0,
+        },
+        {
+          name: "Ohagi",
+          description: "Kleefrijstpasta",
+          image: images.OHAGI,
+          price: 7.2,
         },
       ],
     },
