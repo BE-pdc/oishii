@@ -4,6 +4,11 @@ import HERO_OISHII from "./../images/hero-sushi.jpeg"
 
 import JAPANESE_RESTAURANT from "./../images/japanese_restaurant.jpg"
 
+import BLANK_PHONE from "./../images/blank_phone.png"
+import OISHII_APP from "./../images/oishii_app.png"
+import GOOGLE_PLAY_BADGE from "./../images/google_play_badge.png"
+import APP_STORE_BADGE from "./../images/app_store_badge.png"
+
 import APPETIZERS from "./../images/appetizers.png"
 import BEVERAGES from "./../images/beverages.png"
 import DESSERTS from "./../images/desserts.png"
@@ -52,6 +57,10 @@ const IMAGES = {
   OISHII_LOGO_x2,
   HERO_OISHII,
   JAPANESE_RESTAURANT,
+  BLANK_PHONE,
+  OISHII_APP,
+  GOOGLE_PLAY_BADGE,
+  APP_STORE_BADGE,
   APPETIZERS,
   BEVERAGES,
   DESSERTS,
