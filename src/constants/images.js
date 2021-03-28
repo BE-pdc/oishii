@@ -2,7 +2,13 @@ import OISHII_LOGO from "./../images/Oishii_logo.png"
 import OISHII_LOGO_x2 from "./../images/Oishii_logo_x2.png"
 import HERO_OISHII from "./../images/hero-sushi.jpeg"
 
+import NY_MAP from "./../images/ny_map.jpg"
 import JAPANESE_RESTAURANT from "./../images/japanese_restaurant.jpg"
+
+import CONTACT_PHONE from "./../images/phone.png"
+import CONTACT_EMAIL from "./../images/email.png"
+import CONTACT_WEBSITE from "./../images/website.png"
+import CONTACT_LOCATION from "./../images/location.png"
 
 import BLANK_PHONE from "./../images/blank_phone.png"
 import OISHII_APP from "./../images/oishii_app.png"
@@ -56,7 +62,12 @@ const IMAGES = {
   OISHII_LOGO,
   OISHII_LOGO_x2,
   HERO_OISHII,
+  NY_MAP,
   JAPANESE_RESTAURANT,
+  CONTACT_PHONE,
+  CONTACT_EMAIL,
+  CONTACT_WEBSITE,
+  CONTACT_LOCATION,
   BLANK_PHONE,
   OISHII_APP,
   GOOGLE_PLAY_BADGE,
